@@ -18,12 +18,6 @@ y_quantized = round(y_quantized);
 
 y_hist = hist(y_quantized(:), min(y_quantized(:)):max(y_quantized(:)));
 p = y_hist/sum(y_hist);
-% y_hist = histogram(y_quantized, 2048);
-% p = y_hist.Values/sum(y_hist.Values);
-
-% [~,~,idx] = unique(y_quantized);
-% n = accumarray(idx(:),1);
-% p = n/sum(sum(n));
 
 R = huffman(p);
 yhat = imdct(y_quantized*stepsize);
