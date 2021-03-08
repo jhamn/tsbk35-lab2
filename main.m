@@ -1,4 +1,4 @@
-
+clear;
 
 fileName = "heyhey.wav";
 [y, fs] = audioread(fileName);
