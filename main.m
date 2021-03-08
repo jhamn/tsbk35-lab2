@@ -38,4 +38,4 @@ fprintf('R:             %f\n', R)
 fprintf('D:             %e\n', D)
 fprintf('SNR:           %f\n', SNR)
 
-sound(yhat,fs)
+%sound(yhat,fs)
